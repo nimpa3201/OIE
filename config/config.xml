@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<SFConfig>
+
+    <PATH>
+        <BasePath  value =".\..\data\scd"/>
+
+        <DictPath value = ".\..\..\data\dictionary"/>
+
+        <MorphtagPath value = ".\..\..\data\morph_tag"/>
+
+        <ParserPath   location = "..\src"/>
+    </PATH>
+    
+    <FieldList>
+        <ScdField>
+            <Field name="DOCID"/>
+            <Field name="Date"/>
+            <Field name="TITLE"/>
+            <Field name="WRITER"/>
+            <Field name="CONTENT"/>
+            <Field name="ATTACHNAME"/>
+            <Field name="ATTACHEXT"/>
+            <Field name="ATTACHCON"/>
+            <Field name="LINK"/>
+            <Field name="FILELINK"/>
+            <Field name="ALIAS"/>
+        </ScdField>
+
+        <ProcessField>
+            <Field name="TITLE"/>
+            <Field name="CONTENT"/>
+        </ProcessField>
+
+        <OutputField>
+            <Field name = "NER"/>
+            <Field name="OIE"/>
+        </OutputField> 
+    </FieldList>
+    
+</SFConfig>
